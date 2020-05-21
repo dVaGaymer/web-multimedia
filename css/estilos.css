@@ -335,11 +335,12 @@ h1, h2, h3, h4, h5, h6 {
         background: rgba(0,0,0,0.8)
     }
     .banner {
-        margin-top: -160px;
+        margin-top: -200px;
         z-index: -1000;
     }
     .banner__content {
-        font-size: 2em
+        margin-top: -20px;
+        font-size: 0.9em
     }
     .column--50 {
         width: 50%;
