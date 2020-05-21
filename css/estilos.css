@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------Estilos header--------------------------*/
 
 .main-header {
+    z-index: 2000;
     top: 0px;
     position: fixed;
     width: 100%;
