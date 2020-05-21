@@ -277,43 +277,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:600px) {
     .main-header {
-        background: rgba(0,0,0,0.8);
-    }
-    .logo {
-        color: white;
-    }
-    .main-header__contactInfo {
-        text-align: right;
-    }
-    .main-header__contactInfo__phone {
-        background: none
-    }
-    .main-nav {
-        background: rgba(0,0,0,0.8)
-    }
-    .banner {
-        margin-top: -145px;
-        z-index: -1000;
-    }
-    .banner__content {
-        font-size: 2em
-    }
-    .column--50 {
-        width: 50%;
-    }
-    .column--50-25 {
-        width: 50%
-    }
-    
-    .column--33{
-        width: 33%;
-        border: 1px solid rgba(255,255,255,0.5);
-        padding: 10px;
-    }
-}
-
-@media screen and (min-width:600px) {
-    .main-header {
         top: 0px;
         position: fixed;
         background: rgba(0,0,0,0.8);
