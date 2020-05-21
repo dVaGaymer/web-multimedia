@@ -320,6 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width:600px) {
     .main-header {
+        height: 55px;
         background: rgba(0, 0, 0, 0.8);
     }
     .logo {
@@ -332,14 +333,16 @@ h1, h2, h3, h4, h5, h6 {
         background: none
     }
     .main-nav {
+        height: 55spx;
         background: rgba(0,0,0,0.8)
     }
     .banner {
         margin-top: -200px;
+        padding-bottom: 20px;
         z-index: -1000;
     }
     .banner__content {
-        margin-top: 25px;
+        margin-top: 30px;
         font-size: 1em
     }
     .column--50 {
