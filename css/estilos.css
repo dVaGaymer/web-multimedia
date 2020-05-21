@@ -61,9 +61,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------Estilos menú--------------------------*/
-
 .main-nav {
     width: 100%;
+    position: relative;
     z-index: 2000;
     padding: 10px;
     background: rgba(0,0,0,.80);
@@ -140,10 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------Estilos banner--------------------------*/
 
 .banner{
-    top: 40px;
     margin-top: -55px;
     position: relative;  
-    z-index: 1000;
 }
 .banner:before {
     content: '';
@@ -179,11 +177,11 @@ h1, h2, h3, h4, h5, h6 {
     background: darkorange;
     color: white;
     padding: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
 .main__title {
-    margin:25px 0;
+    margin:15px 0;
     font-size: 1.8em;
     font-family: 'Oswald';
     font-weight: 100;
@@ -279,9 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:600px) {
     .main-header {
-        position: fixed;
-        top: 0px;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0,0,0,0.8);
     }
     .logo {
         color: white;
@@ -293,12 +289,10 @@ h1, h2, h3, h4, h5, h6 {
         background: none
     }
     .main-nav {
-        position: fixed;
-        top: 58px;
         background: rgba(0,0,0,0.8)
     }
     .banner {
-        margin-top: -120px;
+        margin-top: -145px;
         z-index: -1000;
     }
     .banner__content {
@@ -318,10 +312,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
     .main-header {
-        height: 55px;
-        background: rgba(0, 0, 0, 0.8);
+        top: 0px;
+        position: fixed;
+        background: rgba(0,0,0,0.8);
     }
     .logo {
         color: white;
@@ -333,17 +328,16 @@ h1, h2, h3, h4, h5, h6 {
         background: none
     }
     .main-nav {
-        height: 55spx;
+        top: 58px;
+        position: fixed;
         background: rgba(0,0,0,0.8)
     }
     .banner {
-        margin-top: -200px;
-        padding-bottom: 20px;
+        margin-top: -145px;
         z-index: -1000;
     }
     .banner__content {
-        margin-top: 30px;
-        font-size: 1em
+        font-size: 2em
     }
     .column--50 {
         width: 50%;
