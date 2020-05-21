@@ -40,9 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------Estilos header--------------------------*/
 
 .main-header {
-    z-index: 2000;
-    top: 0px;
-    position: fixed;
     width: 100%;
 }
 .logo {
@@ -66,9 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------Estilos menú--------------------------*/
 
 .main-nav {
-    top: 58px;
     width: 100%;
-    position: fixed;
     z-index: 2000;
     padding: 10px;
     background: rgba(0,0,0,.80);
@@ -145,9 +140,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------Estilos banner--------------------------*/
 
 .banner{
-    top: 50px;
+    top: 40px;
     margin-top: -55px;
     position: relative;  
+    z-index: 1000;
 }
 .banner:before {
     content: '';
@@ -187,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main__title {
-    margin:15px 0;
+    margin:25px 0;
     font-size: 1.8em;
     font-family: 'Oswald';
     font-weight: 100;
@@ -283,7 +279,48 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:600px) {
     .main-header {
-        background: rgba(0,0,0,0.8);
+        position: fixed;
+        top: 0px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .logo {
+        color: white;
+    }
+    .main-header__contactInfo {
+        text-align: right;
+    }
+    .main-header__contactInfo__phone {
+        background: none
+    }
+    .main-nav {
+        position: fixed;
+        top: 58px;
+        background: rgba(0,0,0,0.8)
+    }
+    .banner {
+        margin-top: -145px;
+        z-index: -1000;
+    }
+    .banner__content {
+        font-size: 2em
+    }
+    .column--50 {
+        width: 50%;
+    }
+    .column--50-25 {
+        width: 50%
+    }
+    
+    .column--33{
+        width: 33%;
+        border: 1px solid rgba(255,255,255,0.5);
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-header {
+        background: rgba(0, 0, 0, 0.8);
     }
     .logo {
         color: white;
@@ -317,6 +354,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 10px;
     }
 }
+
 @media screen and (min-width:1080px) {
     .column--50-25{
         width: 25%;
